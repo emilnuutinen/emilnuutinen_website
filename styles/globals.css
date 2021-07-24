@@ -9,10 +9,10 @@ body[data-theme="light"] {
 
 body[data-theme="dark"] {
   --bg: #0e141b;
-  --textNormal: #b2b2b2;
-  --textTitle: #f4bf75;
-  --textLink: #aa759f;
-  --headerTag: #ac4142;
+  --textNormal: #b2b2a2;
+  --textTitle: #d79921;
+  --textLink: #b16286;
+  --headerTag: #cc241d;
   --hr: #98971a;
 }
 
