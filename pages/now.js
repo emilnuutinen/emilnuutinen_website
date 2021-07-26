@@ -16,7 +16,7 @@ export default function About () {
         </p>
 
         <h2>Building</h2>
-        <p>I'm constantly updating this website and keeping my web development skills sharp that way. Latest update was to move to <a href='https://nextjs.org/blog/next-11'>Next.js 11</a> and get rid of <a href='https://github.com/webpack-contrib/raw-loader'>raw-loader</a> from my blog (Next.js 11 uses Webpack v5 and raw-loader is depreacted for Webpack v5).</p>
+        <p>I'm constantly updating this website and keeping my web development skills sharp that way. Latest update was to move to <a href='https://nextjs.org/blog/next-11'>Next.js 11</a> and get rid of <a href='https://github.com/webpack-contrib/raw-loader'>raw-loader</a> from my blog (Next.js 11 uses Webpack v5 and raw-loader is deprecated in Webpack v5).</p>
         <p>I'm also doing a research about how the COVID-19 lockdowns affected introverts in comparison to extroverts. I'm mining Reddit's introvert and extrovert subreddits for the data.</p>
 
         <h2>Fitness</h2>
