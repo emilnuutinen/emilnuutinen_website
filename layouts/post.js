@@ -1,3 +1,4 @@
+import marked from 'marked'
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -16,7 +17,7 @@ export default function PostLayout (props) {
             </code>
           ))}
         </small>
-        <div dangerouslySetInnerHTML={{ __html: props.content }} />
+        <div dangerouslySetInnerHTML={{ __html: marked(props.content) }} />
         <Link href='/blog'>
           Back to blog index
         </Link>

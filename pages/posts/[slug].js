@@ -1,23 +1,41 @@
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import marked from 'marked'
 import PostLayout from '@layouts/post'
-import { getPostBySlug, getAllPosts } from "@api"
 
-export default function Post(props) {
-  return <PostLayout title={props.title} date={props.date} tags={props.tags} content={props.content}/>
-}
-
-export async function getStaticProps(context) {
-  return {
-    props: await getPostBySlug(context.params.slug)
-  }
+export default function Post({frontmatter: { title, date, tags }, content }) {
+  return <PostLayout title={title} date={date} tags={tags} content={content}/>
 }
 
 export async function getStaticPaths() {
-  let paths = await getAllPosts()
-  paths = paths.map(post => ({
-    params: { slug:post.slug }
-  }));
+  const files = fs.readdirSync(path.join('posts'))
+
+  const paths = files.map((filename) => ({
+    params: {
+      slug: filename.replace('.md', ''),
+    },
+  }))
+
   return {
-    paths: paths,
-    fallback: false
+    paths,
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params: { slug } }) {
+  const markdownWithMeta = fs.readFileSync(
+    path.join('posts', slug + '.md'),
+    'utf-8'
+  )
+
+  const { data: frontmatter, content } = matter(markdownWithMeta)
+
+  return {
+    props: {
+      frontmatter,
+      slug,
+      content,
+    },
   }
 }

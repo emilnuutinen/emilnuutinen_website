@@ -1,9 +1,10 @@
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { getAllPosts } from '@api'
-
-export default function Blog (props) {
+export default function Blog ({ posts }) {
   return (
     <>
       <Head>
@@ -13,15 +14,13 @@ export default function Blog (props) {
         <h1>Blog</h1>
         <p>Random ramblings about everything.</p>
         <ul>
-          {props.posts.map(function (post, idx) {
-            return (
-              <li key={idx}>{post.date}:&nbsp;
-                <Link href={'/posts/' + post.slug}>
-                  <a>{post.title}</a>
-                </Link>
-              </li>
-            )
-          })}
+          {posts.map((post, idx) => (
+            <li key={idx}>{post.frontmatter.date}:&nbsp;
+              <Link href={'/posts/' + post.slug}>
+                <a>{post.frontmatter.title}</a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </main>
     </>
@@ -29,11 +28,31 @@ export default function Blog (props) {
 }
 
 export async function getStaticProps () {
-  const allPosts = await getAllPosts()
-  allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
+  // Get files from the posts dir
+  const files = fs.readdirSync(path.join('posts'))
+
+  // Get slug and frontmatter from posts
+  const posts = files.map((filename) => {
+    // Create slug
+    const slug = filename.replace('.md', '')
+
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join('posts', filename),
+      'utf-8'
+    )
+
+    const { data: frontmatter } = matter(markdownWithMeta)
+
+    return {
+      slug,
+      frontmatter
+    }
+  })
+
   return {
     props: {
-      posts: allPosts
+      posts: posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
     }
   }
 }
