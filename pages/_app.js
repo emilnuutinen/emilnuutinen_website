@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import Layout from '../layouts/layout'
-import '@fontsource/jetbrains-mono'
+import '@ibm/plex'
 
 export default function MyApp ({ Component, pageProps }) {
   return (

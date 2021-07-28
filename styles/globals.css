@@ -34,7 +34,7 @@ body {
   background: var(--bg);
   color: var(--textNormal);
   font-size: 14px;
-  font-family: 'JetBrains Mono';
+  font-family: 'IBM Plex Mono';
   margin: 0;
   padding: 0;
   font-weight: 400;

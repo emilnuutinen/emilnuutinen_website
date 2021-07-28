@@ -26,7 +26,7 @@ export default function About () {
           <li>Vim for quick edits.</li>
           <li>I also write down my thoughts in markdown using Vim. I made <a href='https://github.com/emilnuutinen/dotfiles_mac/tree/master/.scripts'>scripts</a> to automate my daily journals and weekly reflections.</li>
           <li>Terminal client is Kitty with <a href='https://ohmyz.sh/'>Oh My ZSH</a> & <a href='https://github.com/denysdovhan/spaceship-prompt'>Spaceship prompt</a>.</li>
-          <li>My favorite fonts are <a href='https://rubjo.github.io/victor-mono/'>Victor Mono</a> and <a href='https://www.jetbrains.com/lp/mono/'>JetBrains Mono</a>.</li>
+          <li>My favorite fonts are <a href='https://www.ibm.com/plex/'>IBM Plex Mono</a> and <a href='https://www.jetbrains.com/lp/mono/'>JetBrains Mono</a>.</li>
           <li>Slack & Microsoft Teams for professional communication.</li>
           <li>Telegram & Discord for personal communication.</li>
           <li>Firefox for browsing the internet. (Safari & Chrome for testing)</li>
