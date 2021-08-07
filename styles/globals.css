@@ -11,12 +11,12 @@
 
 @media (prefers-color-scheme: light) {
   body {
-    --bg: #fbf1c7;
-    --textNormal: #111111;
-    --textTitle: #b57614;
-    --textLink: #8f3f71;
-    --headerTag: #9d0006;
-    --hr: #98971a;
+    --bg: #fff1e5;
+    --textNormal: #33302e;
+    --textTitle: #111;
+    --textLink: #771451;
+    --headerTag: #cc241d;
+    --hr: #b8af05;
   }
 }
 
