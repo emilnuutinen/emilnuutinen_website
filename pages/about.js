@@ -28,8 +28,9 @@ export default function About () {
 
         <p>On my freetime I enjoy exploring Unix-based operating systems. I installed my first Linux in 2004. For the last 2 years I have used Arch Linux as my daily driver. I value privacy and customizability so Linux is a good fit for me. I like how using Arch as a daily driver forces you to learn how Linux actually works.</p>
 
-      <p>I really enjoy tools that stay out of the way and <i>let you do the things you want in the way you want</i>. <br /> 
-        That is why I:</p>
+        <p>I really enjoy tools that stay out of the way and <i>let you do the things you want in the way you want</i>. <br />
+          That is why I:
+        </p>
 
         <ul>
           <li>Enjoy using Linux.</li>
@@ -38,7 +39,7 @@ export default function About () {
           <li>Use Vim and markdown-files as my note-taking and task-management tools.</li>
           <li>Etc, the list goes on...</li>
         </ul>
-        
+
         <p>I'm also a big advocate for offline-first tools. I want my tools to open instantly and I want to know exactly where my data lives and I want be in a full control of it.</p>
 
         <p>When I'm not on my computer over-engineering everything, I like to read alot. I read mostly non-fiction books. And I love personal blogs. I'm not on social media, but I follow many blogs. Reading through my RSS feeds is a big part of my morning routine.</p>

@@ -21,6 +21,10 @@ export default function Header () {
           <Link href='/uses'>
             Uses
           </Link>
+          &nbsp;-&nbsp;
+          <Link href='/feed.xml'>
+            RSS
+          </Link>
         </div>
       </div>
     </div>

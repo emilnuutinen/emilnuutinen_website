@@ -15,8 +15,8 @@ export default function About () {
         <p>For personal use I have a desktop computer with Arch Linux for daily use and Windows 10 for gaming. I love the minimalist nature of Arch. You get a bare installation and you need to install everything else yourself. For a tinkerer and experimentalist like myself this is a perfect distro. This computer does not have anything work/study related on it. I'm maybe ditching Windows in the future if gaming on Arch gets easier.</p>
 
         <p>For work and study I use a M1 Macbook Pro. I really love this machine for productivity usage. I'm a Linux user by heart, but from the pure productivity standpoint this little M1 Macbook is perfect for me. Everything just works out of the box. I have used Arch for work too, but I feel that with MacOS you get a much better software support. I often need Adobe products or Microsoft Office etc. Most of these tools are available as web apps, but I'm kind of oldschool and want to install everything on my machine to be able to use the tools offline too.</p>
-        
-        <p>There is also one particular app that I have not been able to replicate in Linux. That is <a href="https://flexibits.com/fantastical">Fantastical</a>. It just has the best support for all the different accounts. I have my iCloud, Microsoft Exchange and two Google accounts connected to it and I can see all my activities (including reminders) in one place.</p>
+
+        <p>There is also one particular app that I have not been able to replicate in Linux. That is <a href='https://flexibits.com/fantastical'>Fantastical</a>. It just has the best support for all the different accounts. I have my iCloud, Microsoft Exchange and two Google accounts connected to it and I can see all my activities (including reminders) in one place.</p>
 
         <h2>Desktop Setup (daily driver)</h2>
         <ul>
