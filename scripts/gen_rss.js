@@ -21,9 +21,11 @@ async function generate () {
       )
       const frontmatter = matter(content)
 
+      const formattedContent = '<pre>' + frontmatter.content + '</pre>'
+
       feed.item({
         title: frontmatter.data.title,
-        description: frontmatter.content,
+        description: formattedContent,
         url: 'https://emilnuutinen.com/posts/' + name.replace(/\.md?/, ''),
         date: frontmatter.data.date
       })
