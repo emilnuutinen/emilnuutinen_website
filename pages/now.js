@@ -12,7 +12,7 @@ export default function About () {
 
         <h2>Learning</h2>
         <p>I start my Computer Science Master's in September.</p>
-        <p>Meanwhile I'm updgrading my knoweldge on <b>Linear Algebra </b>&<b> Machine Learning</b>. I'm also actively improving my <b>algorithm and data structures</b> skills.
+        <p>Meanwhile I'm upgrading my knowledge on <b>Linear Algebra </b>&<b> Machine Learning</b>. I'm also actively improving my <b>algorithm and data structures</b> skills.
         </p>
 
         <h2>Building</h2>
