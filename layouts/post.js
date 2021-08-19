@@ -10,13 +10,14 @@ export default function PostLayout (props) {
       </Head>
       <main>
         <h1>{props.title}</h1>
-        <small>Tags:
+        <p>Tags: [
           {props.tags.map(tag => (
-            <code key={tag}>
-              &nbsp;`{tag}`
-            </code>
+            <small key={tag}>
+              "{tag}",
+            </small>
           ))}
-        </small>
+          ]
+        </p>
         <div dangerouslySetInnerHTML={{ __html: marked(props.content) }} />
         <Link href='/blog'>
           Back to blog index

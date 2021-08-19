@@ -13,7 +13,6 @@ I have had the now-page on this website that does kind of the same thing, but I 
 I implemented an RSS feed for this blog. I follow tens of other blogs through RSS and it felt dumb to not have an RSS feed on my own. I used the [RSS](https://github.com/dylang/node-rss) package because it was really simple to use. This website is made with Next.js and all I had to do was to add a Node.js script in scripts-folder on the root of my project. I then call that script on build time.
 
 ```javascript
-
 const marked = require('marked')
 const { promises: fs } = require('fs')
 const path = require('path')

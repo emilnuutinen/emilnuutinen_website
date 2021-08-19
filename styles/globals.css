@@ -1,6 +1,8 @@
 @media (prefers-color-scheme: dark) {
   body {
     --bg: #111111;
+    --border: #282828;
+    --codeBg: #14161b;
     --textNormal: #a0a090;
     --textTitle: #d79921;
     --textLink: #b16286;
@@ -12,6 +14,8 @@
 @media (prefers-color-scheme: light) {
   body {
     --bg: #fff1e5;
+    --border: #282828;
+    --codeBg: #14161b;
     --textNormal: #33302e;
     --textTitle: #111;
     --textLink: #771451;
@@ -76,6 +80,13 @@ b {
 
 code {
   color: var(--hr);
+  background-color: var(--codeBg);
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
 }
 
 h1,
