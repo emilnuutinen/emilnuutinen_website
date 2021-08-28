@@ -16,14 +16,7 @@ export default function PostLayout (props) {
       </Head>
       <main>
         <h1>{props.title}</h1>
-        <p>Tags: [
-          {props.tags.map(tag => (
-            <small key={tag}>
-              "{tag}",
-            </small>
-          ))}
-          ]
-        </p>
+        <small>Tags: [ {props.tags.join(', ')} ]</small>
         <div dangerouslySetInnerHTML={{ __html: text }} />
         <Link href='/blog'>
           Back to blog index
