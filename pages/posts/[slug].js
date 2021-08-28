@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
 import PostLayout from '@layouts/post'
 
 export default function Post({frontmatter: { title, date, tags }, content }) {

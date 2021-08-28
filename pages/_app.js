@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/gruvbox.css'
 import Layout from '../layouts/layout'
 import '@ibm/plex'
 

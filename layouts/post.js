@@ -1,8 +1,14 @@
+import React, { useEffect } from 'react'
 import marked from 'marked'
+import Prism from 'prismjs'
 import Head from 'next/head'
 import Link from 'next/link'
 
 export default function PostLayout (props) {
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
+  const text = marked(props.content)
   return (
     <>
       <Head>
@@ -18,7 +24,7 @@ export default function PostLayout (props) {
           ))}
           ]
         </p>
-        <div dangerouslySetInnerHTML={{ __html: marked(props.content) }} />
+        <div dangerouslySetInnerHTML={{ __html: text }} />
         <Link href='/blog'>
           Back to blog index
         </Link>
